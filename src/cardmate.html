@@ -22,6 +22,18 @@
                 font-weight: 900;
             }
 
+            h5 {
+                font-weight: 600;
+            }
+
+            .container span {
+                background-color: yellow;
+            }
+
+            .container h5 span{
+                background-color: red;
+            }
+
             .container {
                 width: 55%;
             }
@@ -74,44 +86,47 @@
 <div class="container">
     <div class="filtering">
         <h1>정규식을 통한 데이터 필터링 과정</h1><br>
+        <h5>- <span>기본 정규식은 필터링이 부족해 불필요한 데이터까지 추출이 됨, 정규식 조건을 추가, 역할별 함수 생성</span></h5>
         <img src="/img/ocr_text.PNG">
         <img src="/img/ocr_text_ext.PNG">
-        <p>- OCR이 추출한 명함 사진 데이터와 정규식을 통해 필터링 된 명함 데이터를 담기 위한 함수</p><br>
+        <p>: <span>OCR이 추출한 명함 사진 데이터와 정규식을 통해 필터링 된 명함 데이터를 담기 위한 함수</span></p><br>
         <img src="/img/ex_name.PNG" style="width: 49%">
         <img src="/img/ex_company.PNG" style="width: 49%">
         <img src="/img/ex_email.PNG" style="width: 49%">
         <img src="/img/ex_position.PNG" style="width: 49%">
         <img src="/img/ex_ex_position.PNG" style="width: 69%">
-        <p>- 정규식에 조건을 추가하고 역할별 함수를 생성(일부 코드 생략됨)</p><br>
+        <p>: <span>정규식에 조건을 추가하고 역할별 함수를 생성(일부 코드 생략됨)</span></p><br>
         <hr>
     </div>
     <div class="img_server">
         <h1>서버에 이미지 저장, 가져오기</h1><br>
+        <h5>- <span>DB 메모리를 확보하기 위해 서버에 이미지를 저장, DB에 img(이미지) 명을 저장</span></h5>
         <img src="/img/upload_1.PNG">
-        <p>- null 값이 반환되더라도 이름을 제외한 데이터는 빈 문자열로 대체(NullPointerException을 방지)</p><br>
+        <p>: <span>null 값이 반환되더라도 이름을 제외한 데이터는 빈 문자열로 대체(NullPointerException을 방지)</span></p><br>
         <img src="/img/upload_2.PNG">
         <img src="/img/upload_3.PNG">
-        <p>- 이미지를 업로드하면 알맞은 경로에 uploads 폴더를 생성(uploads 폴더가 없을 시)</p><br>
+        <p>: <span>이미지를 업로드하면 알맞은 경로에 uploads 폴더를 생성(uploads 폴더가 없을 시)</span></p><br>
         <img src="/img/img_null.PNG">
-        <p>- js에서 getElementById('display-image') 함수를 통해 DB에 저장된 img(이미지) 명을 가져와 서버에 이미지 요청</p><br>
+        <p>: <span>js에서 getElementById('display-image') 함수를 통해 DB에 저장된 img(이미지) 명을 가져와 서버에 이미지 요청</span></p><br>
         <hr>
     </div>
     <div class="img_delete">
         <h1>서버의 이미지 삭제, DB의 명함 데이터 삭제</h1><br>
+        <h5>- <span>명함 삭제시 서버, DB의 명함 데이터를 모두 지우기 위한 코드 개선이 필요</span></h5>
         <img src="/img/card_delete1.PNG">
         <img src="/img/card_delete2.PNG">
-        <p>- 체크 박스 삭제 이벤트 핸들러: 삭제버튼을 클릭하면 이 이벤트 핸들러가 실행</p>
-        <p>- 체크된 명함(card)들을 식별하고 삭제
-        <p>- 선택된 각 체크 박스의 data-id 및 data-image 속성을 통해 명함(card)의 ID 및 이미지 경로를 가져옴</p>
-        <p>- 각 명함(card)에 대한 삭제 요청을 보냄</p>
-        <p>- 백엔드 서버에 해당 명함(card)을 삭제하도록 요청
-        <p>- 응답이 성공적이면, 관련된 이미지 파일도 삭제하고 해당 명함(card)을 페이지에서 제거</p>
-        <p>- location.reload(); (페이지를 새로 고침하여 업데이트된 명함(card) 목록을 표시)</p><br>
+        <p>: <span>체크 박스 삭제 이벤트 핸들러, 삭제버튼을 클릭하면 이 이벤트 핸들러가 실행</span></p>
+        <p>: <span>체크된 명함(card)들을 식별하고 삭제</span></p>
+        <p>: <span>선택된 각 체크 박스의 data-id 및 data-image 속성을 통해 명함(card)의 ID 및 이미지 경로를 가져옴</span></p>
+        <p>: <span>각 명함(card)에 대한 삭제 요청을 보냄</span></p>
+        <p>: <span>백엔드 서버에 해당 명함(card)을 삭제하도록 요청</span></p>
+        <p>: <span>응답이 성공적이면, 관련된 이미지 파일도 삭제하고 해당 명함(card)을 페이지에서 제거</span></p>
+        <p>: <span>location.reload(); (페이지를 새로 고침하여 업데이트된 명함(card) 목록을 표시)</span></p><br>
         <img src="/img/card_controller1.PNG">
         <img src="/img/card_controller2.PNG">
-        <p>- Controller에서 응답하는 명함 삭제 관련 코드</p>
-        <p>- @DeleteMapping 어노테이션을 사용하여 HTTP DELETE 요청을 처리</p>
-        <p>- 성공적으로 삭제되면 HTTP 상태 코드 200(OK)을 반환, 삭제에 실패하면 404(NOT_FOUND)를 반환</p><br>
+        <p>: <span> Controller에서 응답하는 명함 삭제 관련 코드</span></p>
+        <p>: <span> @DeleteMapping 어노테이션을 사용하여 HTTP DELETE 요청을 처리</span></p>
+        <p>: <span> 성공적으로 삭제되면 HTTP 상태 코드 200(OK)을 반환, 삭제에 실패하면 404(NOT_FOUND)를 반환</span></p><br>
     </div>
 </div>
 </body>

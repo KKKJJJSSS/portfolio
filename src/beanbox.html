@@ -22,6 +22,18 @@
                 font-weight: 900;
             }
 
+            h5 {
+                font-weight: 600;
+            }
+
+            .container span {
+                background-color: yellow;
+            }
+
+            .container h5 span{
+                background-color: red;
+            }
+
             .container {
                 width: 55%;
             }
@@ -74,22 +86,23 @@
 <div class="container">
     <div class="ocr">
         <h1>OCR의 처리 속도 개선 과정</h1><br>
+        <h5>- <span>이미지의 해상도가 높을 경우 OCR의 처리 속도가 현저히 저하하는 문제가 발생</span></h5>
         <img src="/img/img_resolution.PNG">
-        <p>- 이미지의 해상도가 높을 경우 OCR의 처리 속도가 현저히 저하하는 문제가 발생</p>
-        <p>- 이미지가 최대 크기를 초과하는 경우 해상도를 조정하여 OCR의 처리 속도를 개선</p><br>
+        <p>: <span>이미지가 최대 크기를 초과하는 경우 해상도를 조정하여 OCR의 처리 속도를 개선</span></p><br>
         <img src="/img/img_size.PNG">
-        <p>- BufferedImage 객체를 생성하여 새로운 이미지를 만듦, 이 이미지는 newWidth와 newHeight로 크기가 조정</p>
-        <p>- getGraphics().drawImage() 메서드를 사용하여 원본 이미지를 newWidth 및 newHeight에 맞게 조정</p>
-        <p>- 해상도 조절을 통해 저하된 화질을 SCALE_SMOOTH 속성으로 화질 개선</p><br><hr>
+        <p>: <span> BufferedImage 객체를 생성하여 새로운 이미지를 만듦, 이 이미지는 newWidth와 newHeight로 크기가 조정</span></p>
+        <p>: <span> getGraphics().drawImage() 메서드를 사용하여 원본 이미지를 newWidth 및 newHeight에 맞게 조정</span></p>
+        <p>: <span> 해상도 조절을 통해 저하된 화질을 SCALE_SMOOTH 속성으로 화질 개선</span></p><br><hr>
     </div>
     <div class="gps_api">
         <h1>레시피 맛집 카카오맵에 출력</h1><br>
+        <h5>- <span>사용자가 원하는 레시피를 지도 페이지로 이동해 다시 입력해야 되는 과정이 발생</span></h5>
         <img src="/img/search_word.PNG">
-        <p>- 레시피 페이지에서 coffee_name 값을 전달해 동적 URL 요청</p><br>
+        <p>: <span> 레시피 페이지에서 coffee_name 값을 전달해 동적 URL 요청</span></p><br>
         <img src="/img/gps_controller.PNG">
-        <p>- Controller에서 search_word 파라미터 값을 전달받고 gps 페이지에 반환</p><br>
+        <p>: <span> Controller에서 search_word 파라미터 값을 전달받고 gps 페이지에 반환</span></p><br>
         <img src="/img/gps_word.PNG">
-        <p>- 전달받은 search_word 값을 검색어 입력창에 전달받아 알맞은 카페를 추천</p><br>
+        <p>: <span> 전달받은 search_word 값을 검색어 입력창에 전달받아 알맞은 카페를 추천</span></p><br>
     </div>
 </div>
 </body>
