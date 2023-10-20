@@ -30,7 +30,7 @@
                 background-color: yellow;
             }
 
-            .container h5 span{
+            .container h5 span {
                 background-color: red;
             }
 
@@ -41,6 +41,15 @@
             img {
                 width: 100%;
                 height: 100%;
+                transition: all 0.2s linear;
+            }
+
+            .a {
+                display: inline;
+            }
+
+            .a:hover img {
+                transform: scale(1.7);
             }
 
             @media screen and (max-width: 960px) {
@@ -90,11 +99,21 @@
         <img src="/img/ocr_text.PNG">
         <img src="/img/ocr_text_ext.PNG">
         <p>: <span>OCR이 추출한 명함 사진 데이터와 정규식을 통해 필터링 된 명함 데이터를 담기 위한 함수</span></p><br>
-        <img src="/img/ex_name.PNG" style="width: 49%">
-        <img src="/img/ex_company.PNG" style="width: 49%">
-        <img src="/img/ex_email.PNG" style="width: 49%">
-        <img src="/img/ex_position.PNG" style="width: 49%">
-        <img src="/img/ex_ex_position.PNG" style="width: 69%">
+        <div class="a">
+            <img src="/img/ex_name.PNG" style="width: 49%">
+        </div>
+        <div class="a">
+            <img src="/img/ex_company.PNG" style="width: 49%">
+        </div>
+        <div class="a">
+            <img src="/img/ex_email.PNG" style="width: 49%">
+        </div>
+        <div class="a">
+            <img src="/img/ex_position.PNG" style="width: 49%">
+        </div>
+        <div class="a">
+            <img src="/img/ex_ex_position.PNG" style="width: 69%">
+        </div>
         <p>: <span>정규식에 조건을 추가하고 역할별 함수를 생성(일부 코드 생략됨)</span></p><br>
         <hr>
     </div>

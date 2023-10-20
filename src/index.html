@@ -47,7 +47,15 @@
             img {
                 width: 49%;
                 height: 49%;
+                transition: all 0.2s linear;
+            }
 
+            .a {
+                display: inline;
+            }
+
+            .a:hover img {
+                transform: scale(2.2);
             }
 
             .more_info {
@@ -58,7 +66,8 @@
                 .container {
                     width: 90%;
                 }
-                .img_info img{
+
+                .img_info img {
                     height: 55%;
                     width: 100%;
                     margin-top: 30px;
@@ -108,8 +117,10 @@
                 <img src="/img/picture.jpg" style="height: auto">
             </div>
             <div class="col-8">
-                <p>Java 기반이며 Spring Boot와 Mybatis Annotation 방식으로 CRUD 처리가 가능한 Rest API를 활용하여 MVC 패턴 적용 프로젝트를 진행, 이미지 최적화 작업 결과 OCR 성능은 50%
-                    상승하여 사용자들의 처리 시간은 크게 줄어듦. 추가로, 정규식을 활용하여 추출한 텍스트 데이터로 80%의 정확도를 가진 자동 명함 등록 기능을 개발, 이를 통해 사용자들의 작업 효율성이 크게 증가함</p>
+                <p>Java 기반이며 Spring Boot와 Mybatis Annotation 방식으로 CRUD 처리가 가능한 Rest API를 활용하여 MVC 패턴 적용 프로젝트를 진행, 이미지
+                    최적화 작업 결과 OCR 성능은 50%
+                    상승하여 사용자들의 처리 시간은 크게 줄어듦. 추가로, 정규식을 활용하여 추출한 텍스트 데이터로 80%의 정확도를 가진 자동 명함 등록 기능을 개발, 이를 통해 사용자들의 작업
+                    효율성이 크게 증가함</p>
             </div>
         </div>
         <div class="more_info">
@@ -139,11 +150,20 @@
         <h6>링크 : </h6><a href="https://beanbox.kro.kr/">https://beanbox.kro.kr/</a><br><br>
         <p>OCR을 이용하여 사진으로 간편한 레시피 추천</p>
         <p>테스트 ID : test / 1234</p>
-        <img src="img/stack.PNG"><br><hr>
-        <img src="img/main.png">
-        <img src="img/cart.png">
-        <img src="img/recipe.png">
-        <img src="img/shop.png"></p>
+        <img src="img/stack.PNG"><br>
+        <hr>
+        <div class="a">
+            <img src="img/main.png">
+        </div>
+        <div class="a">
+            <img src="img/cart.png">
+        </div>
+        <div class="a">
+            <img src="img/recipe.png">
+        </div>
+        <div class="a">
+            <img src="img/shop.png"></p>
+        </div>
         <p style="font-weight: 600">담당</p>
         <p>- REST API 구축</p>
         <p>- 구글 비전 API의 OCR을 적용</p>
@@ -160,11 +180,20 @@
         <h6>링크 : </h6><a href="https://cardmate.kro.kr/">https://cardmate.kro.kr/</a><br><br>
         <p>OCR을 이용하여 사진으로 간편한 명함 관리</p>
         <p>테스트 ID : test / 1234</p>
-        <img src="img/stack.PNG"><br><hr>
-        <img src="img/main.gif">
-        <img src="img/upload.PNG">
-        <img src="img/auto.png">
-        <img src="img/show.png"></p>
+        <img src="img/stack.PNG"><br>
+        <hr>
+        <div class="a">
+            <img src="img/main.gif">
+        </div>
+        <div class="a">
+            <img src="img/upload.PNG">
+        </div>
+        <div class="a">
+            <img src="img/auto.png">
+        </div>
+        <div class="a">
+            <img src="img/show.png"></p>
+        </div>
         <p style="font-weight: 600">담당</p>
         <p>- REST API 구축</p>
         <p>- 구글 비전 API의 OCR을 적용</p>
