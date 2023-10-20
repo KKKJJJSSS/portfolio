@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="../static/css/index.css" rel="stylesheet" type="text/css"/>
+</head>
+<header>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>김진성 | 백엔드 개발자</title>
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+              integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" rel="stylesheet">
+        <style>
+            .container {
+                margin-top: 65px;
+            }
+
+            h1 {
+                text-align: center;
+                margin-top: 5rem;
+                font-weight: 900;
+            }
+
+            .container {
+                width: 55%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            @media screen and (max-width: 960px) {
+                .container {
+                    width: 90%;
+                }
+            }
+        </style>
+    </head>
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">김진성 | 백엔드 개발자</a>
+                <button aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation" class="navbar-toggler"
+                        data-bs-target="#offcanvasDarkNavbar" data-bs-toggle="offcanvas" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div aria-labelledby="offcanvasDarkNavbarLabel" class="offcanvas offcanvas-end text-bg-dark"
+                     id="offcanvasDarkNavbar" tabindex="-1">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">개발 목록</h5>
+                        <button aria-label="Close" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                type="button"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="beanbox.html">Beanbox</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cardmate.html">Cardmate</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <script crossorigin="anonymous" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</header>
+<body>
+<div class="container">
+    <div class="ocr">
+        <h1>OCR의 처리 속도 개선 과정</h1><br>
+        <img src="/img/img_resolution.PNG">
+        <p>- 이미지의 해상도가 높을 경우 OCR의 처리 속도가 현저히 저하하는 문제가 발생</p>
+        <p>- 이미지가 최대 크기를 초과하는 경우 해상도를 조정하여 OCR의 처리 속도를 개선</p><br>
+        <img src="/img/img_size.PNG">
+        <p>- BufferedImage 객체를 생성하여 새로운 이미지를 만듦, 이 이미지는 newWidth와 newHeight로 크기가 조정</p>
+        <p>- getGraphics().drawImage() 메서드를 사용하여 원본 이미지를 newWidth 및 newHeight에 맞게 조정</p>
+        <p>- 해상도 조절을 통해 저하된 화질을 SCALE_SMOOTH 속성으로 화질 개선</p><br><hr>
+    </div>
+    <div class="gps_api">
+        <h1>레시피 맛집 카카오맵에 출력</h1><br>
+        <img src="/img/search_word.PNG">
+        <p>- 레시피 페이지에서 coffee_name 값을 전달해 동적 URL 요청</p><br>
+        <img src="/img/gps_controller.PNG">
+        <p>- Controller에서 search_word 파라미터 값을 전달받고 gps 페이지에 반환</p><br>
+        <img src="/img/gps_word.PNG">
+        <p>- 전달받은 search_word 값을 검색어 입력창에 전달받아 알맞은 카페를 추천</p><br>
+    </div>
+</div>
+</body>
+</html>
