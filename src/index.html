@@ -149,78 +149,116 @@
     <h4>Projects</h4>
     <hr>
     <div class="beanbox">
-        <button type="button" class="btn btn-outline-dark" onclick="toggleVisibility('beanboxContent')" style="margin-top: 1rem; margin-bottom: 1rem;">Beanbox 프로젝트 상세보기</button>
-        <div id="beanboxContent" class="hidden">
-        <h5>커피 레시피 추천(3개월/3명) PL(Full Stack)</h5><br>
-        <p>- 현대인과 커피, 이 둘의 일상을 완벽하게 연결하는 웹사이트입니다. 원두부터 커피, 카페까지, OCR 기술로 사진 한 장으로 모든 정보를 찾을 수 있습니다.</p>
-        <h6>기간 : 2023.03~2023.06 / Github : </h6><a href="https://github.com/KKKJJJSSS/Beanbox">https://github.com/KKKJJJSSS/Beanbox</a><br><br>
-        <h6>링크 : </h6><a href="https://beanbox.kro.kr/">https://beanbox.kro.kr/</a><br><br>
-        <p>테스트 ID : test / 1234</p>
-        <br>
-        <h4>- System Architecture</h4>
-        <img src="img/system_architecture.png" style="width: 70%"><br><br>
-        <h4>- OCR processing process</h4><br>
-        <img src="img/ocr.png" style="width: 90%"><br><br>
-        <h4>- Actual Page</h4><br>
-        <div class="a">
-            <img src="img/main.png">
-        </div>
-        <div class="a">
-            <img src="img/cart.png">
-        </div>
-        <div class="a">
-            <img src="img/recipe.png">
-        </div>
-        <div class="a">
-            <img src="img/shop.png">
-        </div><br><br>
-        <p style="font-weight: 600">담당</p>
-        <p>- Google Vision API의 머신러닝 OCR을 적용</p>
-        <p>- 이미지 해상도 조절, 화질 개선을 통한 최적화 작업(50% 이상 OCR 성능향상)</p>
-        <p>- 카카오맵 API를 이용해 맵 페이지 구현</p>
-        <p>- 유지보수를 위한 전체적인 코드 리팩토링</p>
-        <p>- Javascript로 서버와 통신하여 동적 페이지 구현</p>
-        <p>- MariaDB를 사용한 DB 구축, 비즈니스 로직 작성</p>
-        <p>- AWS EC2를 사용한 서버 배포, 운영 관리</p>
-        <a href="beanbox.html">에러 항목/해결 과정(코드 리뷰)</a><br><br><br>
-        <hr>
+        <button class="btn btn-outline-dark" onclick="toggleVisibility('beanboxContent')" style="margin-top: 1rem; margin-bottom: 1rem;"
+                type="button">Beanbox 프로젝트 상세보기
+        </button>
+        <div class="hidden" id="beanboxContent">
+            <h5>커피 레시피 추천(3개월/3명) PL(Full Stack)</h5><br>
+            <p>- 현대인과 커피, 이 둘의 일상을 완벽하게 연결하는 웹사이트입니다. 원두부터 커피, 카페까지, OCR 기술로 사진 한 장으로 모든 정보를 찾을 수 있습니다.</p>
+            <h6>기간 : 2023.03~2023.06 / Github : </h6><a href="https://github.com/KKKJJJSSS/Beanbox">https://github.com/KKKJJJSSS/Beanbox</a><br><br>
+            <h6>링크 : </h6><a href="https://beanbox.kro.kr/">https://beanbox.kro.kr/</a><br><br>
+            <p>테스트 ID : test / 1234</p>
+            <br>
+            <h4>- System Architecture</h4>
+            <img src="img/system_architecture.png" style="width: 70%"><br><br>
+            <h4>- OCR processing process</h4><br>
+            <img src="img/ocr.png" style="width: 90%"><br><br>
+            <h4>- Actual Page</h4><br>
+            <div class="a">
+                <img src="img/main.png">
+            </div>
+            <div class="a">
+                <img src="img/cart.png">
+            </div>
+            <div class="a">
+                <img src="img/recipe.png">
+            </div>
+            <div class="a">
+                <img src="img/shop.png">
+            </div>
+            <br><br>
+            <p style="font-weight: 600">담당</p>
+            <p>- Google Vision API의 머신러닝 OCR을 적용</p>
+            <p>- 이미지 해상도 조절, 화질 개선을 통한 최적화 작업(50% 이상 OCR 성능향상)</p>
+            <p>- 카카오맵 API를 이용해 맵 페이지 구현</p>
+            <p>- 유지보수를 위한 전체적인 코드 리팩토링</p>
+            <p>- Javascript로 서버와 통신하여 동적 페이지 구현</p>
+            <p>- MariaDB를 사용한 DB 구축, 비즈니스 로직 작성</p>
+            <p>- AWS EC2를 사용한 서버 배포, 운영 관리</p>
+            <a href="beanbox.html">에러 항목/해결 과정(코드 리뷰)</a><br><br><br>
+            <hr>
         </div>
     </div>
     <div class="cardmate">
-        <button type="button" class="btn btn-outline-dark" onclick="toggleVisibility('cardmateContent')" style="margin-top: 1rem; margin-bottom: 1rem;">Cardmate 프로젝트 상세보기</button>
-        <div id="cardmateContent" class="hidden">
-        <h5>간편한 명함 관리(1개월/1명) Full Stack</h5><br>
-        <p>- 명함 관리를 더욱 간편하게 만드는 웹사이트입니다. OCR 기술과 정규식을 활용하여, 사진 한 장으로 명함 정보를 즉시 등록하고 정리하여 효율적인 명함 관리가 가능합니다.</p>
-        <h6>기간 : 2023.05~2023.06 / Github : </h6><a href="https://github.com/KKKJJJSSS/BusinessCard">https://github.com/KKKJJJSSS/BusinessCard</a><br><br>
-        <h6>링크 : </h6><a href="https://cardmate.kro.kr/">https://cardmate.kro.kr/</a><br><br>
-        <p>테스트 ID : test / 1234</p>
-        <br>
-        <h4>- System Architecture</h4><br>
-        <img src="img/cloudtype.png" style="width: 70%"><br><br>
-        <h4>- UML(Sequence Diagram)</h4><br>
-        <img src="img/sequence.png" style="width: 70%"><br><br>
-        <h4>- Actual Page</h4><br>
-        <div class="a">
-            <img src="img/main.gif">
+        <button class="btn btn-outline-dark" onclick="toggleVisibility('cardmateContent')" style="margin-top: 1rem; margin-bottom: 1rem;"
+                type="button">Cardmate 프로젝트 상세보기
+        </button>
+        <div class="hidden" id="cardmateContent">
+            <h5>간편한 명함 관리(1개월/1명) Full Stack</h5><br>
+            <p>- 명함 관리를 더욱 간편하게 만드는 웹사이트입니다. OCR 기술과 정규식을 활용하여, 사진 한 장으로 명함 정보를 즉시 등록하고 정리하여 효율적인 명함 관리가 가능합니다.</p>
+            <h6>기간 : 2023.05~2023.06 / Github : </h6><a href="https://github.com/KKKJJJSSS/BusinessCard">https://github.com/KKKJJJSSS/BusinessCard</a><br><br>
+            <h6>링크 : </h6><a href="https://cardmate.kro.kr/">https://cardmate.kro.kr/</a><br><br>
+            <p>테스트 ID : test / 1234</p>
+            <br>
+            <h4>- System Architecture</h4><br>
+            <img src="img/cloudtype.png" style="width: 70%"><br><br>
+            <h4>- UML(Sequence Diagram)</h4><br>
+            <img src="img/sequence.png" style="width: 70%"><br><br>
+            <h4>- Actual Page</h4><br>
+            <div class="a">
+                <img src="img/main.gif">
+            </div>
+            <div class="a">
+                <img src="img/upload.PNG">
+            </div>
+            <div class="a">
+                <img src="img/auto.png">
+            </div>
+            <div class="a">
+                <img src="img/show.png"></p>
+            </div>
+            <p style="font-weight: 600">담당</p>
+            <p>- Google Vision API의 머신러닝 OCR을 적용</p>
+            <p>- 이미지 해상도 조절, 화질 개선을 통한 최적화 작업(50% 이상 OCR 성능향상)</p>
+            <p>- 정규식을 이용한 데이터 필터링 API 구현(정확도 80% 이상)</p>
+            <p>- BootStrap을 사용해 반응형 페이지 제작</p>
+            <p>- DB, 서버로의 명함 등록, 수정, 삭제 기능 구현</p>
+            <p>- AWS -> Cloudtype으로의 서버 이전, 환경 재구축</p>
+            <a href="cardmate.html">에러 항목/해결 과정(코드 리뷰)</a><br><br>
         </div>
-        <div class="a">
-            <img src="img/upload.PNG">
-        </div>
-        <div class="a">
-            <img src="img/auto.png">
-        </div>
-        <div class="a">
-            <img src="img/show.png"></p>
-        </div>
-        <p style="font-weight: 600">담당</p>
-        <p>- Google Vision API의 머신러닝 OCR을 적용</p>
-        <p>- 이미지 해상도 조절, 화질 개선을 통한 최적화 작업(50% 이상 OCR 성능향상)</p>
-        <p>- 정규식을 이용한 데이터 필터링 API 구현(정확도 80% 이상)</p>
-        <p>- BootStrap을 사용해 반응형 페이지 제작</p>
-        <p>- DB, 서버로의 명함 등록, 수정, 삭제 기능 구현</p>
-        <p>- AWS -> Cloudtype으로의 서버 이전, 환경 재구축</p>
-        <a href="cardmate.html">에러 항목/해결 과정(코드 리뷰)</a><br><br>
     </div>
+    <div class="cac">
+        <button class="btn btn-outline-dark" onclick="toggleVisibility('cacContent')" style="margin-top: 1rem; margin-bottom: 1rem;" type="button">CAC 프로젝트 상세보기
+        </button>
+        <div class="hidden" id="cacContent">
+            <h5>경조사비 추천/관리(1명) Full Stack</h5><br>
+            <p>- 경조사비를 관리할 수 있는 웹사이트를 구축했습니다. JPA를 활용하여 로직을 구성했고, 상황에 맞는 알맞은 경조사비를 추천받을 수 있습니다.</p>
+            <h6>기간 : 2023.11~2023.11 / Github : </h6><a href="https://github.com/KKKJJJSSS/CAC">https://github.com/KKKJJJSSS/CAC</a><br><br>
+            <h6>링크 : </h6><a href="http://13.209.125.59:8080/">http://13.209.125.59:8080/</a><br><br>
+            <br>
+            <h4>- Actual Page</h4><br>
+            <div class="a">
+                <img src="img/cac_listpage.PNG">
+            </div>
+            <div class="a">
+                <img src="img/cac_searchpage.PNG">
+            </div>
+            <div class="a">
+                <img src="img/cac_uploadpage.PNG">
+            </div>
+            <div class="a">
+                <img src="img/cac_loginpage.PNG"></p>
+            </div>
+            <div class="a">
+                <img src="img/cac_logoutpage.PNG"></p>
+            </div>
+            <p style="font-weight: 600">담당</p>
+            <p>- JPA를 이용하여 데이터베이스와 효율적으로 통신하는 로직을 구성</p>
+            <p>- 업로드 및 삭제 기능에 대한 유효성 검사를 강화하여 안정성 확보</p>
+            <p>- 데이터 검색을 통한 데이터 필터링 기능 구현</p>
+            <p>- 데이터를 정확한 형식으로 변환하여 데이터의 일관성 유지 및 처리 효율성 향상</p>
+            <p>- Kakao 로그인 기능을 구현하기 위해 Oauth를 활용하여 보안적인 측면을 강화</p>
+        </div>
     </div>
 </div>
 <script>
